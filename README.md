@@ -1,5 +1,31 @@
 # Cifrado César
 
+## Definición de Producto
+* El principal usuario son los investigadores de un centro de investigación medica(Farmacología).
+* El objetivo principal es codificar información confidencial de su nueva investigación.
+* Mediante la aplicación podran iniciar sesión para así evitar ingreso de personas externas al equipo, luego podran descifrar o cifrar mensajes escogiendo el numero de desplazamientos deseados.
+
+***
+## Diseño de prototipos de baja fidelidad
+
+**Primer prototipo**
+![prototipo1] (./src/assets/indice.jpeg)
+ El feedback recibido fue:
+ Al iniciar se inicie sesión y no validar nro trabajador.
+ Colocar en otra jerarquia escoger cifrar o desifrar.
+ Al mostrar el mensaje ya descifrado o cifrado colocar el nombre del usuario al decirle que fue exitosa la  acción.
+
+**Prototipo con mejoras**
+![prototipo] (./src/assets/prototipo2.jpeg)
+
+***
+## Diagrama de flujo.
+
+![diagrama-flujo] (./src/assets/diagrama.jpeg)
+***
+
+
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
