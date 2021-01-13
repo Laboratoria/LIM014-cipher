@@ -6,9 +6,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+    <header id="header-container">
+      <nav id="header-navigation">
+        <ul id="navigation-list">
+          <li class="list-nav" id="li-goBack">Volver</li>
+          <li class="list-nav" id="li-closeSession">Cerrar Sesión</li>
+        </ul>
+      </nav>
+    </header>
+<!--PANTALLA 2-->
+  <main class="main-container2" id="screen2">
+    <div id="button-container">
+      <button class="buttons" id="encode-button">Cifrar</button>
+      <button class="buttons" id="decode-button">Descifrar</button>
     </div>
+    <form >
+      <label for="displacement-number">Ingrese el número de desplazamientos</label>
+        <input type="number" name="displacement-number" id="displacement-number" placeholder="5" required >
+      <label for="textCode">Ingrese Mensaje </label>
+        <input type="text" name="texCode" id="texCode" placeholder="Hola soy un mensaje" required >
+      <button type="submit" class="buttons" id="submit-button">Siguiente</button>
+    </form>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
