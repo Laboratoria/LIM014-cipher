@@ -21,13 +21,18 @@
       <button class="buttons" id="encode-button">Cifrar</button>
       <button class="buttons" id="decode-button">Descifrar</button>
     </div>
-    <form >
-      <label for="displacement-number">Ingrese el número de desplazamientos</label>
-        <input type="number" name="displacement-number" id="displacement-number" placeholder="5" required >
-      <label for="textCode">Ingrese Mensaje </label>
-        <input type="text" name="texCode" id="texCode" placeholder="Hola soy un mensaje" required >
-      <button type="submit" class="buttons" id="submit-button">Siguiente</button>
-    </form>
+
+    <div id="form-container">
+      <label for="user-number">Ingrese el número de desplazamientos</label>
+        <input type="number" name="user-number" id="user-number" placeholder="5" required >
+      <label for="message">Ingrese Mensaje </label>
+        <textarea name="messge" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí" required></textarea>
+        <div id="area-submitButton">
+          <button class="buttons" id="submit-button">Siguiente</button>
+
+        </div>
+      </div>
+
     </main>
     <script src="index.js" type="module"></script>
   </body>

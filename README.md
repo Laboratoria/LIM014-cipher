@@ -9,19 +9,19 @@
 ## Diseño de prototipos de baja fidelidad
 
 **Primer prototipo**
-![prototipo1] (./assets/indice.jpeg)
+![prototipo1] (/src/assets/indice.jpeg)
  El feedback recibido fue:
  Al iniciar se inicie sesión y no validar nro trabajador.
  Colocar en otra jerarquia escoger cifrar o desifrar.
  Al mostrar el mensaje ya descifrado o cifrado colocar el nombre del usuario al decirle que fue exitosa la  acción.
 
 **Prototipo con mejoras**
-![prototipo] (./assets/prototipo2.jpeg)
+![prototipo] (/src/assets/prototipo2.jpeg)
 
 ***
 ## Diagrama de flujo.
 
-![diagrama-flujo] (./assets/diagrama.jpeg)
+![diagrama-flujo] (/src/assets/diagrama.jpeg)
 ***
 
 

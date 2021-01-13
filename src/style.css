@@ -41,9 +41,53 @@ font-size: 1.8rem;
 
 #button-container{
   width: auto;
-  height: 8rem;
+  height: 6rem;
   display: flex;
   justify-content: space-around;
   justify-items: center;
+  margin: .5rem;
 }
-.buttons{}
+.buttons{
+  margin:.1rem;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  width: 20rem;
+  height: 6rem;
+  background-color:rgba(139, 62, 217, 0.6);
+  border: .2rem solid rgba(139, 62, 217, 0.6) ;
+  color: white;
+  cursor: pointer;
+}
+#form-container{
+  margin: .5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+label{
+  margin: .5rem;
+  padding: .5rem;
+}
+#message{
+  height: 20rem;
+  border-radius: .5rem;
+  border: .2rem solid rgba(139, 62, 217, 0.6) ;
+  padding: .5rem;
+  margin: .5rem;
+}
+#user-number{
+  padding: .5rem;
+  margin:.5rem;
+  border: .2rem solid rgba(139, 62, 217, 0.6) ;
+  border-radius: .5rem;
+  height: 4rem;
+  width: 10rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#area-submitButton{
+  margin: .5rem;
+  display: flex;
+  justify-content: center;
+}
