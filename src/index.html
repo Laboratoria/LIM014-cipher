@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
 
-    <header id="header-container">
-      <nav id="header-navigation">
-        <ul id="navigation-list">
-          <li class="list-nav" id="li-goBack">Volver</li>
-          <li class="list-nav" id="li-closeSession">Cerrar Sesión</li>
-        </ul>
-      </nav>
-    </header>
-<!--PANTALLA 2-->
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header id="header-container">
+    <nav id="header-navigation">
+      <ul id="navigation-list">
+        <li class="list-nav" id="li-goBack">Volver</li>
+        <li class="list-nav" id="li-closeSession">Cerrar Sesión</li>
+      </ul>
+    </nav>
+  </header>
+  <!--PANTALLA 2-->
   <main class="main-container2" id="screen2">
 
-
-    <div id="form-container">
+    <section id="form-container">
       <label for="user-number">Ingrese el número de desplazamientos</label>
-        <input type="number" name="user-number" id="user-number" placeholder="5"   >
+      <input type="number" name="user-number" id="user-number" placeholder="5">
       <label for="message">Ingrese Mensaje </label>
-        <textarea name="messge" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"   ></textarea>
+      <textarea name="messge" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
 
-        <div id="button-container">
-          <button class="buttons" id="encode-button">Cifrar</button>
-          <button class="buttons" id="decode-button">Descifrar</button>
-        </div>
-      </div>
+      <section id="button-container">
+        <button class="buttons" id="encode-button">Cifrar</button>
+        <button class="buttons" id="decode-button">Descifrar</button>
+      </section>
+    </section>
 
-    </main>
-    <script src="index.js" type="module"></script>
-  </body>
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
