@@ -36,9 +36,6 @@ font-size: 1.8rem;
   width: 80vw;
   height: 80vh;
 }
-
-#screen2{}
-
 #button-container{
   width: auto;
   height: 6rem;
@@ -74,6 +71,7 @@ label{
   border: .2rem solid rgba(139, 62, 217, 0.6) ;
   padding: .5rem;
   margin: .5rem;
+  text-transform: uppercase;
 }
 #user-number{
   padding: .5rem;
@@ -86,8 +84,4 @@ label{
   cursor: pointer;
 }
 
-#area-submitButton{
-  margin: .5rem;
-  display: flex;
-  justify-content: center;
-}
+

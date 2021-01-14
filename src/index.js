@@ -3,26 +3,23 @@ import cipher from './cipher.js';
 const encodeButton = document.getElementById('encode-button');
 const decodeButton = document.getElementById('decode-button');
 let offsetNumber;
-let message ;
-let messageValue;
-let offsetValue;
-const submitButton = document.getElementById('submit-button');
+let message;
 
-decodeButton.addEventListener('click', ()=> console.log('hi soy decode'));
-encodeButton.addEventListener('click', ()=> console.log('soy cifrar'));
+decodeButton.addEventListener('click', () => {
 
+  offsetNumber = parseInt(document.getElementById('user-number').value);
+  message = document.getElementById('message').value.toUpperCase();
 
-  submitButton.addEventListener('click', ()=>{
+  console.log(message, offsetNumber);
 
-  offsetNumber = document.getElementById('user-number');
-  message = document.getElementById('message');
-console.log(message);
-  messageValue = message.value;
-  offsetValue = offsetNumber.value;
-  console.log(offsetValue, messageValue);
+  cipher.decode(offsetNumber, message);
+})
 
-}
-);
+  encodeButton.addEventListener('click', () => {
+  offsetNumber = parseInt(document.getElementById('user-number').value);
+  message = document.getElementById('message').value.toUpperCase();
 
+  console.log(message, offsetNumber);
 
-//console.log(cipher);
+  cipher.encode(offsetNumber, message);
+});
