@@ -12,7 +12,7 @@ body{
 }
 /* ESTILOS INTERFAZ 1 */
 .interfaz1{
-  margin: 150px auto;
+  margin: 120px auto;
   padding: 35px 0;
   max-width: 700px;
   display: grid;
