@@ -11,7 +11,7 @@ function funcEmpezar (){
     <div class="container-botones">
       <button id="encodebutton">Cifrar</button>
       <button id="decodebutton">Descifrar</button>
-      <button id="infobutton">Información</button>
+      <button id="infobutton">Informacion</button>
     </div>
     `
 /*   containerwelcome.replaceChild(div); */
