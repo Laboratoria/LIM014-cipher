@@ -71,7 +71,7 @@ label{
   border: .2rem solid rgba(139, 62, 217, 0.6) ;
   padding: .5rem;
   margin: .5rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 #user-number{
   padding: .5rem;
@@ -83,5 +83,29 @@ label{
   text-align: center;
   cursor: pointer;
 }
+#error-container{
+  color: red;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;;
+}
+.message-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+}
 
+#labelFinalMessage{
+  font-size: 3rem;
+  margin:.5rem;
+  padding: .5rem;
+}
+#finalMessage{
+  font-size: 2rem;
+  margin: 1rem;
+}
+/*.hide{
+  display: none;
+}*/

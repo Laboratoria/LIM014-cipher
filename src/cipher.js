@@ -1,4 +1,6 @@
 const asciiNumber = 65;
+const lowerAsciiNumber = 97;
+const lowerAsciiNumberDecode=122;
 const alphabetNumber = 26;
 
 
@@ -7,11 +9,11 @@ const cipher = {
 
   encode: (offset, message) => {
 
-    if(typeof offset !== 'number' || isNaN(offset) || offset < 1) {
+    if (typeof offset !== 'number' || isNaN(offset) || offset < 1) {
 
       throw new TypeError('Número invalido, vuelve a intentar');
     }
-    else if(typeof message !== 'string' || message===''){
+    else if (typeof message !== 'string' || message === '') {
       throw new TypeError('Mensaje invalido, volver a intentar');
     }
     let cipherMessage = '';
@@ -22,6 +24,12 @@ const cipher = {
       if (positionAscii <= 90 && 65 <= positionAscii) {
         displaceCharter = (positionAscii - asciiNumber + offset) % alphabetNumber + asciiNumber;
         cipherMessage += String.fromCharCode(displaceCharter);
+      }
+      else if (positionAscii <= 122 && 97 <= positionAscii) {
+
+        displaceCharter = (positionAscii - lowerAsciiNumber + offset) % alphabetNumber + lowerAsciiNumber;
+        cipherMessage += String.fromCharCode(displaceCharter);
+
       }
       else {
         cipherMessage += String.fromCharCode(positionAscii);
@@ -35,11 +43,11 @@ const cipher = {
 
   decode: (offset, message) => {
 
-    if(typeof offset !== 'number' || isNaN(offset) || offset < 1) {
+    if (typeof offset !== 'number' || isNaN(offset) || offset < 1) {
 
       throw new TypeError('Número invalido, vuelve a intentar');
     }
-    else if(typeof message !=='string'|| message===''){
+    else if (typeof message !== 'string' || message === '') {
 
       throw new TypeError('Mensaje invalido, volver a intentar');
 
@@ -52,11 +60,17 @@ const cipher = {
 
       let positionAscii = message.charCodeAt(i);
 
-      if (positionAscii <= 122 && 65 <= positionAscii) {
+      if (positionAscii <= 90 && 65 <= positionAscii) {
+
         displaceCharter = (positionAscii + asciiNumber - offset) % alphabetNumber + asciiNumber;
 
         decodeMesagge += String.fromCharCode(displaceCharter);
       }
+      else if (positionAscii <= 122 && 97 <= positionAscii) {
+        displaceCharter = (positionAscii -lowerAsciiNumberDecode - offset) % alphabetNumber + lowerAsciiNumberDecode;
+        decodeMesagge += String.fromCharCode(displaceCharter);
+      }
+
       else {
         decodeMesagge += String.fromCharCode(positionAscii);
       }

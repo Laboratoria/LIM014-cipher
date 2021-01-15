@@ -15,8 +15,8 @@ decodeButton.addEventListener('click', () => {
   let offsetNumber;
   let message;
   offsetNumber = parseInt(document.getElementById('user-number').value);
-  message = document.getElementById('message').value.toUpperCase();
-
+  //message = document.getElementById('message').value.toUpperCase();
+  message= document.getElementById('message').value;
   try {
 
     let saveMessageDecode = cipher.decode(offsetNumber, message);
@@ -28,7 +28,7 @@ decodeButton.addEventListener('click', () => {
     NewMessageError.innerHTML = error;
     errorContainer.appendChild(NewMessageError);
 
-    //Preguntar como funciona el nodo  document.body.insertBefore(NewMessageError, errorContainer);
+    /*Preguntar como funciona document.body.insertBefore(NewMessageError, errorContainer); porque me sa error en el nodo*/
 
 
   }
@@ -39,7 +39,9 @@ encodeButton.addEventListener('click', () => {
   let offsetNumber;
   let message;
   offsetNumber = parseInt(document.getElementById('user-number').value);
-  message = document.getElementById('message').value.toUpperCase();
+  //message = document.getElementById('message').value.toUpperCase();
+  message =document.getElementById('message').value;
+
   try {
 
     let saveMessageEncode = cipher.encode(offsetNumber, message);
