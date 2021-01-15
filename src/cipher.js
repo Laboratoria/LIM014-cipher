@@ -1,30 +1,51 @@
 const asciiNumber = 65;
 const alphabetNumber = 26;
-let cipherMenssage = '';
-let decodeMensagge ='';
+
+
 
 const cipher = {
 
   encode: (offset, message) => {
 
+    if(typeof offset !== 'number' || isNaN(offset) || offset < 1) {
+
+      throw new TypeError('offset invalido');
+    }
+    else if(typeof message !== 'string' || message===''){
+      throw new TypeError('message invalido');
+    }
+    let cipherMessage = '';
     for (let i = 0; i < message.length; i++) {
       let displaceCharter;
 
       let positionAscii = message.charCodeAt(i);
       if (positionAscii <= 122 && 65 <= positionAscii) {
         displaceCharter = (positionAscii - asciiNumber + offset) % alphabetNumber + asciiNumber;
-        cipherMenssage += String.fromCharCode(displaceCharter);
+        cipherMessage += String.fromCharCode(displaceCharter);
       }
       else {
-        cipherMenssage += String.fromCharCode(positionAscii);
+        cipherMessage += String.fromCharCode(positionAscii);
       }
 
     }
 
-    return cipherMenssage
+    return cipherMessage;
+
   },
 
   decode: (offset, message) => {
+
+    if(typeof offset !== 'number' || isNaN(offset) || offset < 1) {
+
+      throw new TypeError('offset invalido');
+    }
+    else if(typeof message !=='string'){
+
+      throw new TypeError('message invalido');
+
+    }
+
+    let decodeMesagge = '';
 
     for (let i = 0; i < message.length; i++) {
       let displaceCharter;
@@ -32,19 +53,19 @@ const cipher = {
       let positionAscii = message.charCodeAt(i);
 
       if (positionAscii <= 122 && 65 <= positionAscii) {
-        displaceCharter = (positionAscii + asciiNumber -offset) %alphabetNumber + asciiNumber;
+        displaceCharter = (positionAscii + asciiNumber - offset) % alphabetNumber + asciiNumber;
 
-        decodeMensagge += String.fromCharCode(displaceCharter);
+        decodeMesagge += String.fromCharCode(displaceCharter);
       }
       else {
-        decodeMensagge += String.fromCharCode(positionAscii);
+        decodeMesagge += String.fromCharCode(positionAscii);
       }
 
 
     }
-
-    return decodeMensagge;
-  }
+    return decodeMesagge;
+  },
 }
 
 export default cipher;
+
