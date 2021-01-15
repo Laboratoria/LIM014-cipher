@@ -4,11 +4,14 @@ import cipher from './cipher.js';
 const encodeButton = document.getElementById('encode-button');
 const decodeButton = document.getElementById('decode-button');
 const labelMessage = document.getElementById('labelFinalMessage');
+const errorContainer = document.getElementById('error-container');
 let finalMessage = document.getElementById('finalMessage');
 let userName = 'nombre usuario';
 
 
 decodeButton.addEventListener('click', () => {
+
+  errorContainer.innerHTML = '';
   let offsetNumber;
   let message;
   offsetNumber = parseInt(document.getElementById('user-number').value);
@@ -19,12 +22,20 @@ decodeButton.addEventListener('click', () => {
     let saveMessageDecode = cipher.decode(offsetNumber, message);
     labelMessage.innerHTML = `${userName}, tu mensaje fue Decifrado con exito!! `;
     finalMessage.innerHTML = `${saveMessageDecode}`;
-  } catch (e) {
-    console.log('catch', e);
+  } catch (error) {
+
+    let NewMessageError = document.createElement('p');
+    NewMessageError.innerHTML = error;
+    errorContainer.appendChild(NewMessageError);
+
+    //Preguntar como funciona el nodo  document.body.insertBefore(NewMessageError, errorContainer);
+
+
   }
 });
 
 encodeButton.addEventListener('click', () => {
+  errorContainer.innerHTML = '';
   let offsetNumber;
   let message;
   offsetNumber = parseInt(document.getElementById('user-number').value);
@@ -34,9 +45,12 @@ encodeButton.addEventListener('click', () => {
     let saveMessageEncode = cipher.encode(offsetNumber, message);
     labelMessage.innerHTML = `${userName}, tu mensaje fue Cifrado con exito!! `;
     finalMessage.innerHTML = `${saveMessageEncode}`;
-  } catch(e){
-    console.log(e);
+  } catch (error) {
+    let NewMessageError = document.createElement('p');
+    NewMessageError.innerHTML = error;
+    errorContainer.appendChild(NewMessageError);
+
   }
 
 
-  });
+});

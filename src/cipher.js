@@ -9,17 +9,17 @@ const cipher = {
 
     if(typeof offset !== 'number' || isNaN(offset) || offset < 1) {
 
-      throw new TypeError('offset invalido');
+      throw new TypeError('Número invalido, vuelve a intentar');
     }
     else if(typeof message !== 'string' || message===''){
-      throw new TypeError('message invalido');
+      throw new TypeError('Mensaje invalido, volver a intentar');
     }
     let cipherMessage = '';
     for (let i = 0; i < message.length; i++) {
       let displaceCharter;
 
       let positionAscii = message.charCodeAt(i);
-      if (positionAscii <= 122 && 65 <= positionAscii) {
+      if (positionAscii <= 90 && 65 <= positionAscii) {
         displaceCharter = (positionAscii - asciiNumber + offset) % alphabetNumber + asciiNumber;
         cipherMessage += String.fromCharCode(displaceCharter);
       }
@@ -37,11 +37,11 @@ const cipher = {
 
     if(typeof offset !== 'number' || isNaN(offset) || offset < 1) {
 
-      throw new TypeError('offset invalido');
+      throw new TypeError('Número invalido, vuelve a intentar');
     }
-    else if(typeof message !=='string'){
+    else if(typeof message !=='string'|| message===''){
 
-      throw new TypeError('message invalido');
+      throw new TypeError('Mensaje invalido, volver a intentar');
 
     }
 
