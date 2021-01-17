@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header id="header-container">
+    <nav id="header-navigation">
+      <ul id="navigation-list">
+        <a href=""> <li class="list-nav hide" id="li-goBack">Volver</li></a>
+        <a href=""><li class="list-nav" id="li-closeSession">Cerrar Sesión</li></a>
+      </ul>
+    </nav>
+  </header>
+  <!--PANTALLA 2-->
+  <main class="main-container">
+
+    <section id="form-container">
+      <label for="user-number">Ingrese el número de desplazamientos</label>
+      <input type="number" name="user-number" id="user-number" placeholder="5">
+      <label for="message">Ingrese Mensaje </label>
+      <textarea name="messge" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
+
+      <section id="error-container"></section>
+      <section id="button-container">
+        <button class="buttons" id="encode-button">Cifrar</button>
+        <button class="buttons" id="decode-button">Descifrar</button>
+      </section>
+    </section>
+
+
+  </main>
+  <main class="main-container hide">
+    <section class="message-container">
+      <h1 id="labelFinalMessage"></h1>
+      <p id="finalMessage"></p>
+
+    </section>
+  </main>
+
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

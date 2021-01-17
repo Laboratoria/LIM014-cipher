@@ -16,7 +16,7 @@ decodeButton.addEventListener('click', () => {
   let message;
   offsetNumber = parseInt(document.getElementById('user-number').value);
   //message = document.getElementById('message').value.toUpperCase();
-  message= document.getElementById('message').value;
+  message = document.getElementById('message').value;
   try {
 
     let saveMessageDecode = cipher.decode(offsetNumber, message);
@@ -40,7 +40,7 @@ encodeButton.addEventListener('click', () => {
   let message;
   offsetNumber = parseInt(document.getElementById('user-number').value);
   //message = document.getElementById('message').value.toUpperCase();
-  message =document.getElementById('message').value;
+  message = document.getElementById('message').value;
 
   try {
 

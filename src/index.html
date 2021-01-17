@@ -1,50 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cipher Login</title>
 </head>
 
 <body>
+  <main id="principal-container">
+    <section id="logo-container">
+      <img src="./assets/umbrella1.png" alt="logo umbrella" id="umbrella-image" >
+    </section>
+    <section id="login-container">
+      <section class="welcome-message">
+        <img src="./assets/UmbrellaCorporation3.png" alt="logo umbrella" id="logo-umbrella">
+        <h1>Bienvenido!!</h1>
+        <h2>Inicia Sesión</h2>
 
-  <header id="header-container">
-    <nav id="header-navigation">
-      <ul id="navigation-list">
-        <a href=""> <li class="list-nav hide" id="li-goBack">Volver</li></a>
-        <a href=""><li class="list-nav" id="li-closeSession">Cerrar Sesión</li></a>
-      </ul>
-    </nav>
-  </header>
-  <!--PANTALLA 2-->
-  <main class="main-container">
-
-    <section id="form-container">
-      <label for="user-number">Ingrese el número de desplazamientos</label>
-      <input type="number" name="user-number" id="user-number" placeholder="5">
-      <label for="message">Ingrese Mensaje </label>
-      <textarea name="messge" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
-
-      <section id="error-container"></section>
-      <section id="button-container">
-        <button class="buttons" id="encode-button">Cifrar</button>
-        <button class="buttons" id="decode-button">Descifrar</button>
       </section>
-    </section>
-
-
-  </main>
-  <main class="main-container hide">
-    <section class="message-container">
-      <h1 id="labelFinalMessage"></h1>
-      <p id="finalMessage"></p>
-
+      <form class="form-container" id="form-user">
+        <label for="user-name">Usuario</label>
+        <input type="text" id="user-name" placeholder="Maria">
+        <label for="user-password">Contraseña</label>
+        <input type="password" name="user-password" id="user-password" placeholder="***********">
+        <button class="buttons" id="submit-button"> Iniciar Sesión</button>
+      </form>
     </section>
   </main>
-
-
-  <script src="index.js" type="module"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>

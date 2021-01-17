@@ -1,10 +1,8 @@
 const asciiNumber = 65;
+const asciiNumberDecode = 90;
 const lowerAsciiNumber = 97;
-const lowerAsciiNumberDecode=122;
+const lowerAsciiNumberDecode = 122;
 const alphabetNumber = 26;
-
-
-
 const cipher = {
 
   encode: (offset, message) => {
@@ -34,15 +32,11 @@ const cipher = {
       else {
         cipherMessage += String.fromCharCode(positionAscii);
       }
-
     }
-
     return cipherMessage;
-
   },
 
   decode: (offset, message) => {
-
     if (typeof offset !== 'number' || isNaN(offset) || offset < 1) {
 
       throw new TypeError('Número invalido, vuelve a intentar');
@@ -62,12 +56,12 @@ const cipher = {
 
       if (positionAscii <= 90 && 65 <= positionAscii) {
 
-        displaceCharter = (positionAscii + asciiNumber - offset) % alphabetNumber + asciiNumber;
+        displaceCharter = (positionAscii - asciiNumberDecode - offset) % alphabetNumber + asciiNumberDecode;
 
         decodeMesagge += String.fromCharCode(displaceCharter);
       }
       else if (positionAscii <= 122 && 97 <= positionAscii) {
-        displaceCharter = (positionAscii -lowerAsciiNumberDecode - offset) % alphabetNumber + lowerAsciiNumberDecode;
+        displaceCharter = (positionAscii - lowerAsciiNumberDecode - offset) % alphabetNumber + lowerAsciiNumberDecode;
         decodeMesagge += String.fromCharCode(displaceCharter);
       }
 
