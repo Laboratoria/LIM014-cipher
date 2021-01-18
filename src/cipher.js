@@ -19,11 +19,11 @@ const cipher = {
       let displaceCharter;
 
       let positionAscii = message.charCodeAt(i);
-      if (positionAscii <= 90 && 65 <= positionAscii) {
+      if (positionAscii <= asciiNumberDecode && asciiNumber <= positionAscii) {
         displaceCharter = (positionAscii - asciiNumber + offset) % alphabetNumber + asciiNumber;
         cipherMessage += String.fromCharCode(displaceCharter);
       }
-      else if (positionAscii <= 122 && 97 <= positionAscii) {
+      else if (positionAscii <= lowerAsciiNumberDecode && lowerAsciiNumber<= positionAscii) {
 
         displaceCharter = (positionAscii - lowerAsciiNumber + offset) % alphabetNumber + lowerAsciiNumber;
         cipherMessage += String.fromCharCode(displaceCharter);
@@ -54,13 +54,13 @@ const cipher = {
 
       let positionAscii = message.charCodeAt(i);
 
-      if (positionAscii <= 90 && 65 <= positionAscii) {
+      if (positionAscii <= asciiNumberDecode && asciiNumber <= positionAscii) {
 
         displaceCharter = (positionAscii - asciiNumberDecode - offset) % alphabetNumber + asciiNumberDecode;
 
         decodeMesagge += String.fromCharCode(displaceCharter);
       }
-      else if (positionAscii <= 122 && 97 <= positionAscii) {
+      else if (positionAscii <= lowerAsciiNumberDecode && lowerAsciiNumber <= positionAscii) {
         displaceCharter = (positionAscii - lowerAsciiNumberDecode - offset) % alphabetNumber + lowerAsciiNumberDecode;
         decodeMesagge += String.fromCharCode(displaceCharter);
       }

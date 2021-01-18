@@ -83,8 +83,12 @@ label{
   text-align: center;
   cursor: pointer;
 }
+p{
+  color:red;
+  text-align: center;
+}
 #error-container{
-  color: red;
+
   font-size: 2rem;
   display: flex;
   align-items: center;;
@@ -163,6 +167,6 @@ input{
   text-align: center;
   font-size: 1.8rem;
 }
-/*.hide{
+.hide{
   display: none;
-}*/
+}

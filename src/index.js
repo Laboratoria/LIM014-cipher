@@ -1,12 +1,15 @@
 import cipher from './cipher.js';
 
-
+const containerCode =document.getElementById('containerCode');
+const containerMessage= document.getElementById('containerMessage');
+const goBackItem = document.getElementById('goBack');
+const closeSession =document.getElementById('closeSession');
 const encodeButton = document.getElementById('encode-button');
 const decodeButton = document.getElementById('decode-button');
 const labelMessage = document.getElementById('labelFinalMessage');
 const errorContainer = document.getElementById('error-container');
 let finalMessage = document.getElementById('finalMessage');
-let userName = 'nombre usuario';
+let userName = sessionStorage.getItem('nameUser');
 
 
 decodeButton.addEventListener('click', () => {
@@ -22,9 +25,12 @@ decodeButton.addEventListener('click', () => {
     let saveMessageDecode = cipher.decode(offsetNumber, message);
     labelMessage.innerHTML = `${userName}, tu mensaje fue Decifrado con exito!! `;
     finalMessage.innerHTML = `${saveMessageDecode}`;
+    hide(containerCode);
+    show(goBackItem);
+    show(containerMessage);
   } catch (error) {
 
-    let NewMessageError = document.createElement('p');
+    let NewMessageError = document.createElement('h2');
     NewMessageError.innerHTML = error;
     errorContainer.appendChild(NewMessageError);
 
@@ -47,6 +53,9 @@ encodeButton.addEventListener('click', () => {
     let saveMessageEncode = cipher.encode(offsetNumber, message);
     labelMessage.innerHTML = `${userName}, tu mensaje fue Cifrado con exito!! `;
     finalMessage.innerHTML = `${saveMessageEncode}`;
+    hide(containerCode);
+    show(goBackItem);
+    show(containerMessage);
   } catch (error) {
     let NewMessageError = document.createElement('p');
     NewMessageError.innerHTML = error;
@@ -56,3 +65,20 @@ encodeButton.addEventListener('click', () => {
 
 
 });
+goBackItem.addEventListener('click',()=>{
+  hide(containerMessage);
+  show(containerCode);
+  hide(goBackItem);
+})
+
+closeSession.addEventListener('click',()=>{
+  location.assign('./index.html');
+
+  hide(goBackItem);
+})
+function hide(element){
+element.classList.add('hide');
+}
+function show(element){
+element.classList.remove('hide');
+}

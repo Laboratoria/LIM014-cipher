@@ -12,13 +12,13 @@
   <header id="header-container">
     <nav id="header-navigation">
       <ul id="navigation-list">
-        <a href=""> <li class="list-nav hide" id="li-goBack">Volver</li></a>
-        <a href=""><li class="list-nav" id="li-closeSession">Cerrar Sesión</li></a>
+        <li class="list-nav hide" id="goBack">Volver</li>
+        <li class="list-nav" id="closeSession">Cerrar Sesión</li>
       </ul>
     </nav>
   </header>
   <!--PANTALLA 2-->
-  <main class="main-container">
+  <main class="main-container" id="containerCode">
 
     <section id="form-container">
       <label for="user-number">Ingrese el número de desplazamientos</label>
@@ -35,10 +35,10 @@
 
 
   </main>
-  <main class="main-container hide">
+  <main class="main-container hide" id="containerMessage">
     <section class="message-container">
       <h1 id="labelFinalMessage"></h1>
-      <p id="finalMessage"></p>
+      <h2 id="finalMessage"><h2>
 
     </section>
   </main>
