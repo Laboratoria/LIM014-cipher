@@ -23,16 +23,17 @@ decodeButton.addEventListener('click', () => {
   try {
 
     let saveMessageDecode = cipher.decode(offsetNumber, message);
-    labelMessage.innerHTML = `${userName}, tu mensaje fue Decifrado con exito!! `;
+    labelMessage.innerHTML = `${userName}, tu mensaje fue Descifrado con exito!! `;
     finalMessage.innerHTML = `${saveMessageDecode}`;
     hide(containerCode);
     show(goBackItem);
     show(containerMessage);
   } catch (error) {
 
-    let NewMessageError = document.createElement('h2');
-    NewMessageError.innerHTML = error;
-    errorContainer.appendChild(NewMessageError);
+    let newMessageError = document.createElement('p');
+    newMessageError.innerHTML = error;
+    newMessageError.classList.add('warning');
+    errorContainer.appendChild(newMessageError);
 
     /*Preguntar como funciona document.body.insertBefore(NewMessageError, errorContainer); porque me sa error en el nodo*/
 
@@ -57,9 +58,10 @@ encodeButton.addEventListener('click', () => {
     show(goBackItem);
     show(containerMessage);
   } catch (error) {
-    let NewMessageError = document.createElement('p');
-    NewMessageError.innerHTML = error;
-    errorContainer.appendChild(NewMessageError);
+    let newMessageError = document.createElement('p');
+    newMessageError.classList.add('warning');
+    newMessageError.innerHTML = error;
+    errorContainer.appendChild(newMessageError);
 
   }
 
