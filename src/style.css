@@ -149,7 +149,7 @@ justify-content: space-evenly;
 }
 #umbrella-image{
   align-items: center;
-  margin: 10rem auto;
+  margin: 15rem auto;
   width: 45rem;
   height: 30rem;
 }
@@ -172,6 +172,9 @@ input{
 .warning{
   color: red;
   text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: .5rem;
 }
 .hide{
   display: none;

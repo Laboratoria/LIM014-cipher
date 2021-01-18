@@ -35,7 +35,7 @@ decodeButton.addEventListener('click', () => {
     newMessageError.classList.add('warning');
     errorContainer.appendChild(newMessageError);
 
-    /*Preguntar como funciona document.body.insertBefore(NewMessageError, errorContainer); porque me sa error en el nodo*/
+    /*Preguntar como funciona document.insertBefore(NewMessageError, errorContainer); porque me sa error en el nodo*/
 
 
   }

@@ -12,13 +12,14 @@ const cipher = {
       throw new TypeError('Número invalido, vuelve a intentar');
     }
     else if (typeof message !== 'string' || message === '') {
-      throw new TypeError('Mensaje invalido, volver a intentar');
+      throw new TypeError('Mensaje invalido, vuelve a intentar');
     }
     let cipherMessage = '';
     for (let i = 0; i < message.length; i++) {
-      let displaceCharter;
 
+      let displaceCharter;
       let positionAscii = message.charCodeAt(i);
+
       if (positionAscii <= asciiNumberDecode && asciiNumber <= positionAscii) {
         displaceCharter = (positionAscii - asciiNumber + offset) % alphabetNumber + asciiNumber;
         cipherMessage += String.fromCharCode(displaceCharter);
@@ -43,7 +44,7 @@ const cipher = {
     }
     else if (typeof message !== 'string' || message === '') {
 
-      throw new TypeError('Mensaje invalido, volver a intentar');
+      throw new TypeError('Mensaje invalido, vuelve a intentar');
 
     }
 
