@@ -15,8 +15,10 @@
  Colocar en otra jerarquia escoger cifrar o desifrar.
  Al mostrar el mensaje ya descifrado o cifrado colocar el nombre del usuario al decirle que fue exitosa la  acción.
 
-**Prototipo con mejoras**
-![prototipo2](./src/assets/prototipo2.jpeg)
+**Prototipos con mejoras**
++ ![prototipo2](./src/assets/prototipo2.jpeg)
+
++ [prototipoFigma](https://www.figma.com/file/PTgplnSYn6QDwjT3h6fSgW/Cipher?node-id=120%3A2)
 
 ***
 ## Diagrama de flujo.
