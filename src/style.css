@@ -140,6 +140,7 @@ h1{
   flex-direction: column;
   justify-content: center;
   padding-right: 70px;
+
 }
 .button-start{
   padding: 10px 0;
@@ -148,10 +149,9 @@ h1{
   font-weight: 8px;
   display: inline-block;
 }
-/*
-.container-main{
-  overflow: hidden;
-} */
+.container-main {
+  width: 275px;
+}
 
 
 

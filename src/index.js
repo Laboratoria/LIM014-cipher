@@ -38,23 +38,56 @@ function funcEncode (event) {
     <form action="#">
       <div>
         <label>Elige el número de offset
-          <input type="number" required>
+          <input type="number" id="offset" required>
         </label>
       </div>
       <div>
         <label>Ingresa el texto a cifrar
-          <input type="text" required pattern="[A-Za-z ]+">
+          <input type="text" id="encodetext" required pattern="[A-Za-z ]+">
         </label>
       </div>
       <div>
         <label>Este es tu texto cifrado
-          <input type="text" readonly>
+          <input type="text" id="screenshow" >
         </label>
       </div>
-      <button>ir</button
+      <button id="codificar">ir</button
     </form>
   `
+  const codificar = document.getElementById("codificar");
+  codificar.addEventListener('click', funcCodificar);
+  console.log(codificar);
 }
+function funcCodificar(){
+  const offset1 = parseInt(document.getElementById("offset").value);
+  let encodetext = document.getElementById("encodetext").value;
+  console.log(offset1);
+  console.log(encodetext);
+
+  let arraytext = encodetext.split("");
+  console.log(arraytext)
+  for (let i = 0; i < arraytext.length; i++) {
+    arraytext[i] = arraytext[i].charCodeAt(0);
+  }
+  console.log(arraytext) // ESTO ME DA CODIGO ASCII
+
+  let runarraytext = arraytext.map(function(element) {
+    console.log(offset1)
+
+    return String.fromCharCode((element - 65 + offset1) % 26 + 65);
+  })
+
+  console.log(runarraytext);
+
+  let stringconvert = runarraytext.toString();
+
+  let screenshow = document.getElementById("screenshow");
+  console.log(screenshow);
+  screenshow.value = stringconvert.replaceAll(",","");
+
+
+}
+
 function funcDecode () {
   const containermainjs = document.getElementById("container-mainjs");
   containermainjs.innerHTML = `
@@ -80,7 +113,7 @@ function funcDecode () {
 function funcInfo (){
   const containermainjs = document.getElementById("container-mainjs");
   containermainjs.innerHTML = `
-    <section>
+    <div>
       <h2>Preguntas Frecuentes</h2>
       <article>
         <h3>¿Qué es el fishing cibernético?</h3>
@@ -98,7 +131,7 @@ function funcInfo (){
         <h3>¿Qué es el fishing cibernético?</h3>
         <p>loremlnlnblnblkxnlkxnlknxkmkbmlmfblkmlbkmlxkdmmcnbxbnlxknkxfblkxlbkxlkbmxmlxmlxmn</p>
       </article>
-    </section>
+    </div>
     <form>
       <div>
         <label>Ingresa tu consulta</label> <br>
