@@ -20,7 +20,7 @@
 
 + [prototipoFigma](https://www.figma.com/file/PTgplnSYn6QDwjT3h6fSgW/Cipher?node-id=120%3A2)
 
-***
+**
 ## Diagrama de flujo.
 
 ![diagrama-flujo](./src/assets/diagrama.jpeg)

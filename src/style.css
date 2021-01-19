@@ -19,7 +19,7 @@ text-align: center;
 #navigation-list{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .list-nav{
@@ -111,7 +111,7 @@ label{
   border: .3rem solid #8b3ed9;
   border-radius: 1rem;
   width: 60vw;
-  height: 60vh;
+  height: 50vh;
 }
 #principal-container{
 display: flex;
@@ -198,9 +198,7 @@ input{
   #umbrella-image{
     display: none;
   }
-  #navigation-list{
-    font-size: 2.5rem;
-  }
+git
   #finalMessage{
     height: 40vh;
   }
