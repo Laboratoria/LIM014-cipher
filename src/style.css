@@ -13,8 +13,8 @@ body{
 /* ESTILOS INTERFAZ 1 */
 .interfaz1{
   margin: 120px auto;
-  padding: 35px 0;
-  max-width: 700px;
+  padding: 35px 30px;
+  max-width: 750px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
@@ -139,8 +139,6 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 70px;
-
 }
 .button-start{
   padding: 10px 0;
@@ -149,8 +147,27 @@ h1{
   font-weight: 8px;
   display: inline-block;
 }
-.container-main {
-  width: 275px;
+.container-main input{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+}
+.container-main button{
+  padding: 6px 20px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 7px;
+}
+.container-botones button{
+  width: 31%;
+  margin: 20px 0;
+  padding: 7px 1px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.FAQ {
+  height: 250px;
+  overflow: auto;
 }
 
 
