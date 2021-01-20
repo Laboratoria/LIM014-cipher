@@ -2,9 +2,9 @@ import cipher from './cipher.js';
 
 const startbutton = document.getElementById('button-start-js');
 startbutton.addEventListener ('click', funcEmpezar);
-console.log(startbutton)
-function funcEmpezar (){
-    /*const div = document.createElement("div"); */
+
+function funcEmpezar (event){
+  event.preventDefault();
   const containerwelcome = document.querySelector(".welcome")
   containerwelcome.innerHTML = `
     <h2> Hola, XXX. ¿Qué deseas realizar? </h2>
@@ -15,8 +15,6 @@ function funcEmpezar (){
     </section>
     <section id="container-mainjs" class=container-main></section>
     `
-    /*containerwelcome.replaceChild(div); */
-
   const encodebutton = containerwelcome.querySelector("#encodebutton");
   encodebutton.addEventListener ('click', funcEncode);
   console.log(encodebutton)
@@ -29,7 +27,8 @@ function funcEmpezar (){
   infobutton.addEventListener ('click', funcInfo);
   console.log(infobutton)
 }
-// AHORA TRABAJAMOS LA FUNCION DECODIFICAR
+
+// AHORA TRABAJAMOS LA FUNCION CODIFICAR
 function funcEncode (event) {
   event.preventDefault();
   const containermainjs = document.getElementById("container-mainjs");
@@ -57,35 +56,23 @@ function funcEncode (event) {
   `
   const codificar = document.getElementById("codificar");
   codificar.addEventListener('click', encode);
-  console.log(codificar);
 }
 function encode(){
-  const offset = parseInt(document.getElementById("offset").value); //x default el valor del offset es 1 STRING numérico, x ende el parseInt lo transforma a valor numérico
+  const offset = parseInt(document.getElementById("offset").value);
   let encodetext = document.getElementById("encodetext").value;
-  console.log(offset);
-  console.log(encodetext);
 
-  let arraytext = encodetext.split("");// el split coge 1 string, lo divide en elementos y LO DEVUELVE EN 1 ARRAY
-  console.log(arraytext)
-  for (let i = 0; i < arraytext.length; i++) {// ESTO VA A RECORRER CADA ELEMENTO DEL NUEVO ARRAY Y LO CONVERTIRÁ AL CHARCODEAT
-    arraytext[i] = arraytext[i].charCodeAt(0);//este charCodeAt 0 me dice que desde el indice 0 de los valores spliteados se va a aplicar el codigo ascci
-  }//esos numeros ascii se van a guardar en arraytext
-  console.log(arraytext) // ESTO ME DA EL NUMERO ASCII CORRESPONDIENTE A CADA LETRA O ELEMENTO DEL ARRAY PREVIAMENTE SPLITEADO
+  let arraytext = encodetext.split("");
+  for (let i = 0; i < arraytext.length; i++) {
+    arraytext[i] = arraytext[i].charCodeAt(0);
+  }
 
-  let runarraytext = arraytext.map(function(element) {//con esto cojo cada numero ascii del array arraytext y los recorro con map y les doy 1 funciona  cada 1
-    console.log(offset)//el offset estaba en cadena y x ello tenia que parsearlo y obtener el valor numérico de esta cadena
-    return String.fromCharCode((element - 65 + offset) % 26 + 65);// LA FORMULA HACE QUE APLIQUE EL OFFSET Y ESA NUEVA LETRA Y SE CONVIERTA EN NUMERO ASCII DE NUEVO
-  })// DESPUES VIENE EL STRING FROM CHARCODE QUE HACE QUE ESE NUEVO NUMERO ASCII OFFSEADO SE CONVIERTA A LETRA
-  console.log(runarraytext);
+  let runarraytext = arraytext.map(function(element) {
+    return String.fromCharCode((element - 65 + offset) % 26 + 65);
+  })
 
-  let stringconvert = runarraytext.join('');//ahora convierto denuevo a astring las letras
-  console.log(stringconvert);//join vs toString// al poner '' dentro del join automaticamente dice que no pegue con nada cada letra que junto, osea sin comas
-
+  let stringconvert = runarraytext.join('');
   let screenshow = document.getElementById("screenshow");
-  console.log(screenshow);
-  screenshow.value = stringconvert//.replaceAll(",",""); // y los inyecto en valor al input pero me da con comas así que los reempzo por "nada"
-
-
+  screenshow.value = stringconvert
 }
 
 // AHORA TRABAJAMOS LA FUNCION DECODIFICAR
@@ -119,35 +106,19 @@ function decode (){
   let decodetext = document.getElementById("decodetext").value;
 
   let decodetextarr = decodetext.split('');
-  console.log(decodetextarr);
 
   for (let index = 0; index <decodetextarr.length; index++) {
     decodetextarr[index] = decodetextarr[index].charCodeAt(0);
   }
-  console.log(decodetextarr); //ahora me devuelve ascii en la matriz
 
   let rundecodetextarr = decodetextarr.map(function (elemento){
-    return String.fromCharCode((elemento + 65 - offset1)% 26 + 65) //65; //* -1);
+    return String.fromCharCode((elemento + 65 - offset1)% 26 + 65)
   });
-  console.log(rundecodetextarr);
 
   let stringconvert1 = rundecodetextarr.join('');
-  console.log(stringconvert1);
-
   let screenshow1 = document.getElementById('screenshow1');
   screenshow1.value = stringconvert1;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 function funcInfo (){
   const containermainjs = document.getElementById("container-mainjs");
@@ -184,4 +155,5 @@ function funcInfo (){
     </section>
     `
 }
+
 console.log(cipher);
