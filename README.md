@@ -20,11 +20,15 @@
 
 + [prototipoFigma](https://www.figma.com/file/PTgplnSYn6QDwjT3h6fSgW/Cipher?node-id=120%3A2)
 
-**
+***
 ## Diagrama de flujo.
 
 ![diagrama-flujo](./src/assets/diagrama.jpeg)
 ***
+## Mejoras :
++ agregar instrucciones ya que genera un poco de dudas a usuarios de prueba .
++ incluir más usuarios.
++ Al cerrar sesíon al dar volver en las flechitas del navegador cierre la sesíon.
 
 
 
