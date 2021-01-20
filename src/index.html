@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+  <html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Cifrado Cesar</title>
+      <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+      <header>
+        <!-- logo -->
+        <div class="logo">
+          <img src="imagenes/logo.png" alt="logo ciphers">
+          <hr>
+        </div>
+
+      </header>
+
+      <main>
+
+        <article class="container">
+
+          <form name="Cifrar">
+            <!-- cuadro cifrar -->
+            <div>
+              <textarea placeholder="Ingresa texto a cifrar" name="sourceText">
+              </textarea>
+            </div>
+            <!-- boton cifrar -->
+            <div class="cif">
+              <input class="btn" type="button" value= "CIFRAR" id='encodeText' >
+            </div>
+            <!-- input cifrar -->
+            <div class="cif">
+              <input class="shift_2" type="number" name="shift" id="des_cif" value="">
+              <label class="box" for="shift">N° de desplazamiento:
+              </label>
+            </div>
+
+          </form>
+
+          <form name="Descifrar">
+            <!-- cuadro descifrar -->
+            <div id="tex_2">
+              <textarea placeholder="Ingresar texto a descifrar" name="ResultText">
+              </textarea>
+            </div>
+            <!-- boton descifrar -->
+            <div class="desci">
+              <input class="btn" type="button" value="DESCIFRAR" onclick="decodeText();">
+            </div>
+            <!-- input descifrar -->
+            <div class="desci">
+              <label class="box" id="des_2" for="shift">N° de desplazamiento:</label>
+              <input class="shift_2" type="number" name="shift" id="des_des" value=""
+            </div>
+
+          </form>
+
+        </article>
+
+      </main>
+      <script src="index.js " type='module'></script>
+    </body>
+
 </html>
+
