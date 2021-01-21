@@ -1,3 +1,67 @@
+INVESTIGACIÓN UX - CRYPTO SISTEMAS
+Uno de los principales retos a los nos enfrentamos los ciudadanos en este país es a la inseguridad ciudadana, y los delitos informáticos no son ajenos a esta realidad.
+En el Perú existe una gran cantidad de usuarios que utilizan tarjeta de crédito o tarjeta de débito y comparando con las cifras delitos informaticos, llegamos a la conclusión que gran parte de estos usuarios no preveen la seguridad informática como una prioridad, ya sea por falta de información o porque las contraseñas de sus productos financieros son débiles y predecibles.
+
+Por estos antecedentes es que en CRYPTO SISTEMAS decidimos asumir este gran problema que cada vez más afecta a más peruanos y darles solución mediante la encriptación de contraseñas para cajeros automáticos, POS o transacciones financieras cibernéticas, y mediante la información y educación necesaria para evitar ser víctima de los delitos cibernéticos.
+
+**RESUMEN**
+***Principal objetivo de Crypto Sistemas:*** Reducir en un 12% los delitos informáticos en el Perú para el 2021.
+***Principal amenaza de Crypto Sistemas:*** Nuevas modalidades de delitos informáticos.
+***Estrategia de Crypto Sistemas:*** Cifrado y descifrado de contraseñas de modo seguro y anónimo, y educación cibernética.
+
+Para esta investigación, aplicamos la metodología ágil SCRUM y recopilamos la siguiente información:
+
+- ***Etapa 1 - Descubrimiento***
+  Aproximadamente XXX peruanos utilizan algún tipo de producto financiero y el y% de ese grupo asevera haber sido víctima de algún delito cibernético.
+  Además, xxxxxxxxx
+  El 65% de los usuarios de Fun Fiction, son jóvenes con trabajo fijo, entre 24 y 37 años, y que van al cine como mínimo 3 veces al mes.
+  Ellos buscan entretenimiento, se consideran cinéfilos, y siempre buscan cupones de descuento o promociones para la compra de sus entradas.
+  Además, están a la vanguardia con los dispositivos electrónicos, manejan muy bien sus tecnologías, y el 70% de sus operaciones por internet las realizan  a través de dispositivos móviles.
+  Además, también les gustan los retos y los juegos por apps.
+
+- ***Etapa 2 - Definición***
+  De acuerdo a nuestra investigación previa, determinamos 2 arquetipos de usuarios:
+  * Fernando - tiene 29 años y es soltero, trabaja como analista de riesgos y créditos en banca comercial, y se considera un apasionado por el cine. Su problema es que no se siente en confianza de gastar dinero en ir al cine en todo momento ya que prefiere ahorrar y evitar las aglomeraciones.
+
+  * Sandra - tiene 34 años, es mamá de Santiago, 1 niño de 4 años y solía ir 3 jueves al mes a los estrenos de las películas. Ella trabaja como administradora en una agencia de turismo en Lima, sin embargo, debido a la pandemia vió reducido sus ingresos, por ello ha decidido no ir un buen tiempo al cine.
+
+  /Alex - tiene 19 años, solia ir al cine dos veces al mes con sus compañeros de estudios. durante la pandemia ha recurrido a streaming y espera con ansias la nueva reapertura de los cines, pero con el miedo a los precios elevados que estas podrian tener.
+
+- ***Etapa 3 - Prototipado***
+  En esta etapa, Adriana y yo hemos desarrollado como prototipo una campaña de  trivia divertida, que reta a los usuarios a demostrar cuán cinéfilos son y que despierten de nuevo su feeling por el cine. Esta trivia contará con preguntas relacionadas al cine y la recompensa a sus buenas respuestas será un código de descuento en sus siguientes compras de tickets al cine por internet.
+
+  Construímos y diseñamos 2 posibles prototipos mediante diagramas de flujo y los testeamos con 3 usuarios parte del público objetivo del cinerama. De este testing escogimos el prototipo 1 (de baja y media fidelidad) que cumplía mejor con las expectativas del usuario.
+  EL prototipo fue trabajado para dispositivos móviles ya que va de acuerdo al estudio realizado a nuestro público objetivo.
+
+  **sketch 1 (hacer click en el ícono)**
+  ![Alt text](https://repl.it/@RuthMeryMery/squad1-palim014-turno2-Equipo3#sketch1.png "sketch 1")
+  https://www.figma.com/file/07tc2tiObX0CcLc8goxGNA/FunFiction00
+
+   **sketch 2 (hacer click en el ícono)**
+  ![Alt text]
+  (https://repl.it/@RuthMeryMery/squad1-palim014-turno2-Equipo3#sketch2.png
+  "sketch 2")
+  https://www.figma.com/file/rRF81LvFYE2ZBXcTtl2GsD/ff01
+
+  ***Feedback de usuario testeado 1:***
+
+  Fernando: Lo que mas llama mi atención es el logo en el prototipo 1, y lo segundo es ver la palabra 'ganar', ahora con esta reactivación de cines, esto es de gran ayuda, ya que muchas personas han sido económicamente afectadas y la verdad amamos el cine, y si hay la oportunidad de tener una página que ofrezca una manera de pasar el rato respondiendo preguntas y ganando descuentos me parece super genial.
+
+  ***Feedback de usuario testeado 2:***
+
+  Sandra:
+  Fun Fiction me parece super práctico, hasta podría jugarlo junto a mi hijo y obtener descuentos para ahora que ya se viene la reapertura de los cines. Me agrada el logo del prototipo 1, aunque me da un poco la sensación de que estoy a oscuras y como si se tratara solo de peliculas de horror. Por lo demás me parece que es super práctico, no tiene complicaciones.
+
+  ***Feedback de usuario testeado 3:***
+
+  Alex:
+  El hecho que una App me trate por mi nombre me parece chevere, asi tambien puedo demostrar entre mis amigos cuanto sabemos de cine y ganar todos descuentos para la proxima reapertura de los cines. Por ello me gusta más con la opción 1.
+
+
+- ***Etapa 4 - Entrega***
+  Según los resultados del testing realizado escogimos el prototipo nro.1 que es nuestro producto mínimo viable - MVP que fue desarrollado y lanzado al mercado.
+
+
 # Cifrado César
 
 ## Índice
