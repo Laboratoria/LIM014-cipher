@@ -5,9 +5,18 @@ startbutton.addEventListener ('click', funcEmpezar);
 
 function funcEmpezar (event){
   event.preventDefault();
-  const containerwelcome = document.querySelector(".welcome")
+  const containerwelcome = document.querySelector(".welcome");
+  let nombres = new Array (" Hipopótamo precavido",
+    " Cocodrilo astuto" , " zorro inteligente",
+    " tortuga veloz", " chimpancé desconfiado", " conejo analítico", "marmota ágil", "tigre ahorrador"
+  );
+
+  let numero = nombres.length; //6
+  let random = Math.floor((Math.random())* numero);//me da 1 index cualquiera del array nombres
+  let seudonimo = nombres[random];
+
   containerwelcome.innerHTML = `
-    <h2> Hola, XXX. ¿Qué deseas realizar? </h2>
+    <h2> Hola, ${seudonimo}. ¿Qué deseas realizar? </h2>
     <section class="container-botones">
       <button id="encodebutton">Cifrar</button>
       <button id="decodebutton">Descifrar</button>
@@ -55,24 +64,14 @@ function funcEncode (event) {
     </form>
   `
   const codificar = document.getElementById("codificar");
-  codificar.addEventListener('click', encode);
+  codificar.addEventListener('click', codificar1 );
 }
-function encode(){
+function codificar1 () {
   const offset = parseInt(document.getElementById("offset").value);
   let encodetext = document.getElementById("encodetext").value;
 
-  let arraytext = encodetext.split("");
-  for (let i = 0; i < arraytext.length; i++) {
-    arraytext[i] = arraytext[i].charCodeAt(0);
-  }
-
-  let runarraytext = arraytext.map(function(element) {
-    return String.fromCharCode((element - 65 + offset) % 26 + 65);
-  })
-
-  let stringconvert = runarraytext.join('');
   let screenshow = document.getElementById("screenshow");
-  screenshow.value = stringconvert
+  screenshow.value = cipher.encode(offset, encodetext);
 }
 
 // AHORA TRABAJAMOS LA FUNCION DECODIFICAR
@@ -99,25 +98,14 @@ function funcDecode () {
     </form>
   `
  const decodificar = document.getElementById("decodificar");
- decodificar.addEventListener('click', decode);
+ decodificar.addEventListener('click', decodificar1);
 }
-function decode (){
+function decodificar1 (){
   const offset1 = document.getElementById("offset1").value;
   let decodetext = document.getElementById("decodetext").value;
 
-  let decodetextarr = decodetext.split('');
-
-  for (let index = 0; index <decodetextarr.length; index++) {
-    decodetextarr[index] = decodetextarr[index].charCodeAt(0);
-  }
-
-  let rundecodetextarr = decodetextarr.map(function (elemento){
-    return String.fromCharCode((elemento + 65 - offset1)% 26 + 65)
-  });
-
-  let stringconvert1 = rundecodetextarr.join('');
   let screenshow1 = document.getElementById('screenshow1');
-  screenshow1.value = stringconvert1;
+  screenshow1.value = cipher.decode(offset1, decodetext);
 }
 
 function funcInfo (){
