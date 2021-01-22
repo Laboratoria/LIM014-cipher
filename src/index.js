@@ -67,7 +67,8 @@ function funcEncode (event) {
   const codificar = document.getElementById("codificar");
   codificar.addEventListener('click', codificar1 );
 }
-function codificar1 () {
+function codificar1 (event) {
+  event.preventDefault();
   const offset = parseInt(document.getElementById("offset").value);
   let encodetext = document.getElementById("encodetext").value;
 
@@ -101,7 +102,8 @@ function funcDecode () {
  const decodificar = document.getElementById("decodificar");
  decodificar.addEventListener('click', decodificar1);
 }
-function decodificar1 (){
+function decodificar1 (event){
+  event.preventDefault();
   const offset1 = document.getElementById("offset1").value;
   let decodetext = document.getElementById("decodetext").value;
 
@@ -109,6 +111,7 @@ function decodificar1 (){
   screenshow1.value = cipher.decode(offset1, decodetext);
 }
 
+// AHORA TRABAJAMOS LA FUNCION INFORMACION
 function funcInfo (){
   const containermainjs = document.getElementById("container-mainjs");
   containermainjs.innerHTML = `
