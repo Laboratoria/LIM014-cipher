@@ -10,9 +10,26 @@
       <img style="height:60px; margin:2px 1px" src="./img/logo.png">
       <nav>
         <ul>
-          <li><a href="">Donar</a></li>
+          <li><a class="btn-modal" id="btn-modal" href="">Donar</a></li>
         </ul>
       </nav>
+      <div class="modal" id="modal">
+        <section>
+          <h2 class="modal-h2">Ayúdanos a seguir reforzando los sistemas de seguridad cibernéticos.</h2>
+          <span class="close" id="close">&times;</span>
+          <form>
+            <label>Ingresa el nombre de la tarjeta</label><br>
+            <input type="text" required><br>
+            <label>Ingresa el número de tu tarjeta</label><br>
+            <input type="number" maxlength="16" required><br>
+            <label>Ingresa la fecha de vencimiento</label><br>
+            <input type="number" maxlength="5" required><br>
+            <label>Ingresa el cvv</label><br>
+            <input type="number" maxlength="3" required><br><br>
+            <button>Donar</button>
+          </form>
+        </section>
+      </div>
     </header>
     <main>
       <div class="interfaz1">
@@ -31,6 +48,7 @@
         </div>
         <div class="welcome">
           <h1>¡Bienvenido a Crypto Sistemas!</h1>
+          <h4>El sistema que te brinda contraseñas seguras mediante la codificación, descodificación e información.</h4>
           <button id="button-start-js" class="button-start">Empezar</button>
         </div>
       </div>
