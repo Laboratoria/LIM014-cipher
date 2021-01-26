@@ -19,7 +19,7 @@ Para esta investigación, aplicamos la metodología ágil SCRUM y recopilamos la
    El 70% de ellos realizan sus operaciones financieras a través de desktops ya que les permite ver con mayor claridad las páginas y las urls que visitan para evitar ser estafados.
 - ***Etapa 2 - Definición***
   De acuerdo a nuestra investigación previa, determinamos 2 arquetipos de usuarios:
-  * Carlos - tiene 27 años y es soltero, y tiene su emprendimiento de barbería. El realiza hasta 20 operaciones         financieras al mes entre online y físicas, debido a su rubro económico. Él considera una prioridad la seguridad financiera, por eso tiene asegurada sus cuentas contra robos hasta cierto monto. Su problema es que debido al alto volumen de transacciones que realiza teme ser víctima de algún delito cibernético y financiero, y está considerando reducir la cantidad de operaciones promedio mensual.
+  * Carlos - tiene 27 años y es soltero, y tiene su emprendimiento de barbería. El realiza hasta 20 operaciones financieras al mes entre online y físicas, debido a su rubro económico. Él considera una prioridad la seguridad financiera, por eso tiene asegurada sus cuentas contra robos hasta cierto monto. Su problema es que debido al alto volumen de transacciones que realiza teme ser víctima de algún delito cibernético y financiero, y está considerando reducir la cantidad de operaciones promedio mensual.
 
   * Milagros - tiene 34 años, es mamá de Santiago, 1 niño de 4 años y trabaja como profesora de 3ero de secundaria. Debido a las responsabilidades que tiene no dispone de tiempo suficiente para ir al banco por ende realiza todas sus operaciones financieras de manera digital. Ella es una persona precavida y evitar usar contraseñas predecibles y sabe muy bien que no debe entregar su información financiera a nadie. Sin embargo, hace 2 meses fue víctima del phishing ya que ingresó sus datos en una página clonada de su banca financiera.
 
@@ -27,30 +27,30 @@ Para esta investigación, aplicamos la metodología ágil SCRUM y recopilamos la
 
 - ***Etapa 3 - Prototipado***
   En esta etapa, hemos desarrollado por prototipos 1 producto digital que codifica y descodifica claves personales para banca y además que educa sobre las nuevas modalidades de delitos cibernéticos y sobre cómo prevenirlos.
-  Este producto digital tiene un modo seguro y anónimo para evitar que queden tus datos en el servidor.
+  Este producto digital tiene un modo seguro y anónimo para evitar que queden tus datos en el servidor. Además, se sostiene principalmente mediante donaciones.
 
-  Construímos y diseñamos 2 posibles prototipos mediante diagramas de flujo y los testeamos con 3 usuarios parte del público objetivo. De este testing escogimos el prototipo 2 (de baja y media fidelidad) que cumplía mejor con las expectativas del usuario.
+  Construímos y diseñamos 2 posibles prototipos mediante diagramas de flujo y los testeamos con 3 usuarios parte del público objetivo. De este testing escogimos el prototipo 2 (de baja fidelidad) que cumplía mejor con las expectativas del usuario.
   EL prototipo fue trabajado especialmente para desktops pero también se adapta de móviles.
 
   **sketch 1 (hacer click en el ícono)**
-  ![Alt text](https://repl.it/@RuthMeryMery/squad1-palim014-turno2-Equipo3#sketch1.png "sketch 1")
+  ![Prototipo1](https://github.com/meryvera/LIM014-cipher/blob/mery-cipher2.1/src/img/prototipo1.png "sketch 1")
 
    **sketch 2 (hacer click en el ícono)**
-  ![Alt text](https://repl.it/@RuthMeryMery/squad1-palim014-turno2-Equipo3#sketch2.png "sketch 2")
+  ![Prototipo2](https://github.com/meryvera/LIM014-cipher/blob/mery-cipher2.1/src/img/prototipo2.png "sketch 2")
 
   ***Feedback de usuario testeado 1:***
 
-  Carlos: Lo que mas llama mi atención es el logo en el prototipo 1, y lo segundo es ver la palabra 'ganar', ahora con esta reactivación de cines, esto es de gran ayuda, ya que muchas personas han sido económicamente afectadas y la verdad amamos el cine, y si hay la oportunidad de tener una página que ofrezca una manera de pasar el rato respondiendo preguntas y ganando descuentos me parece super genial.
+  Carlos: Lo que mas llama mi atención es el logo en el prototipo 1, y lo segundo es ver al botòn "información" a la vista. Me parece ùtil encontrar informaciòn relevante a la mano para evitar ser víctimas de la delincuencia.
 
   ***Feedback de usuario testeado 2:***
 
   Milagros:
-  Fun Fiction me parece super práctico, hasta podría jugarlo junto a mi hijo y obtener descuentos para ahora que ya se viene la reapertura de los cines. Me agrada el logo del prototipo 1, aunque me da un poco la sensación de que estoy a oscuras y como si se tratara solo de peliculas de horror. Por lo demás me parece que es super práctico, no tiene complicaciones.
+  Crypto sistemas me llamó mucho la atenciòn que tuviera al robot de seguridad al inicio ya que asì puedo confiar màs en la pàgina. Ademàs, la informaciòn de primera mano que brinda para evitar los ataques cibernèticos me parece sùper necesario. Tambièn los nombres aleatorios que me brindan màs seguridad. Engeneral me gustò màs el prototipo 2.
 
   ***Feedback de usuario testeado 3:***
 
   Octavio:
-  El hecho que una App me trate por mi nombre me parece chevere, asi tambien puedo demostrar entre mis amigos cuanto sabemos de cine y ganar todos descuentos para la proxima reapertura de los cines. Por ello me gusta más con la opción 1.
+  El prototipo 2 me llamò màs la atenciòn ya que tiene el robot como parte de la pàgina. Ademàs ese robot me da mucha confianza de que de verdad obtendrè contraseñas seguras y anònimas.
 
 
 - ***Etapa 4 - Entrega***
