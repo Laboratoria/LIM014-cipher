@@ -33,9 +33,9 @@ function funcEmpezar (event){
   containerwelcome.innerHTML = `
     <h2> Hola, ${seudonimo}. ¿Qué deseas realizar? </h2>
     <section class="container-botones">
-      <button id="encodebutton">Cifrar</button>
-      <button id="decodebutton">Descifrar</button>
-      <button id="infobutton">Información</button>
+      <button id="encodebutton" class="container-botones-btn">Cifrar</button>
+      <button id="decodebutton" class="container-botones-btn">Descifrar</button>
+      <button id="infobutton" class="container-botones-btn">Información</button>
     </section>
     <section id="container-mainjs" class=container-main></section>
     `

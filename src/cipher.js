@@ -3,12 +3,12 @@ const cipher = {
 /*     const alphabet = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
             "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"); */
     let encodetextarrayjs = encodetext.split("");
-/*     let text_resultN = encodetextarrayjs.includes("Ñ");
+    let text_resultN = encodetextarrayjs.includes("Ñ");
     let text_resultn = encodetextarrayjs.includes("ñ");
 
     if(text_resultN=== true || text_resultn===true){
       return alert('No debes ingresar ni "Ñ" ni "ñ"');
-    } */
+    }
 
     for (let i = 0; i < encodetextarrayjs.length; i++) {
       if(encodetextarrayjs[i] === encodetextarrayjs[i].toUpperCase()){
@@ -33,12 +33,12 @@ const cipher = {
 
   decode: function (number1, text1){
     let decodetextarrayjs = text1.split('');
-/*     let text_resultN = decodetextarrayjs.includes("Ñ");
+    let text_resultN = decodetextarrayjs.includes("Ñ");
     let text_resultn = decodetextarrayjs.includes("ñ");
 
     if(text_resultN=== true || text_resultn===true){
       return alert('No debes ingresar ni "Ñ" ni "ñ"');
-    } */
+    }
 
     for (let index = 0; index < decodetextarrayjs.length; index++) {
       if (decodetextarrayjs[index] === decodetextarrayjs[index].toUpperCase()) {

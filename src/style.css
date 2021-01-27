@@ -199,7 +199,7 @@ h1{
   border-radius: 7px;
   margin-top: 15px;
 }
-.container-botones button{
+.container-botones-btn {
   width: 31%;
   margin: 20px 0;
   padding: 7px 1px;
@@ -208,6 +208,9 @@ h1{
   font-size: 1rem;
   font-weight: bold;
   background-color: #1DC4C4;
+}
+.container-botones-btn:hover {
+  background-color: #71f7ca;
 }
 
 /* ESTILOS DE DETALLES DE CADA BOTON*/
