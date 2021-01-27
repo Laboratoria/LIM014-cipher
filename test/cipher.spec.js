@@ -27,7 +27,7 @@ describe('cipher', () => {
 
     it('should return "HIJKLMNOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
       expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
-    });
+    }); //la funcion cipher acepta solo 2 parametros , numero y string, x ende no debo pasar 1 array defrente
 
     // Hacker edition
     //
@@ -53,9 +53,9 @@ describe('cipher', () => {
     // Se quiser adicionar testes para caracteres não alfabéticos, descomente o
     // teste abaixo.
     //
-    // it('should return " !@" for " !@"', () => {
-    //   expect(cipher.encode(33, ' !@')).toBe(' !@');
-    // });
+    //  it('should return " !@" for " !@"', () => {
+    //     expect(cipher.encode(33, ' !@')).toBe(' !@');
+    //  });
   });
 
   describe('cipher.decode', () => {
