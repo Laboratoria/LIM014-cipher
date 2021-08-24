@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cipher Project 2.0</title>
+</head>
+<body>
+  <header class="header">
+    <img class="header__image" src="/src/images/logo.png" alt="Logo caleta cipher" width="120"/>
+    <section class="header__title">
+      Caesar Cipher Project
+    </section>
+
+  </header>
+  <section class="main">
+    <div class="main__content">
+      <div class="main__textarea">
+      <textarea class= "textarea__content" placeholder="Message to encrypt"
+        id="messageOne" cols="70" rows="7">
+      </textarea>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+      <div class="main__input">
+        <input class="box" type="number" min="1" pattern="^[0-9]+ " id="offSet" placeholder="N° of displacements">
+        <button class="button__cipher" id="buttonCipher">Cifrar</button>
+        <button class="button__descipher" id="buttonDecipher">Descifrar</button>
+
+      </div>
+      <div class="main__input_changes">
+      <input class="main__input--text" type="text" id="messageCipher" placeholder="Your encrypted message">
+      <button class="button__clear" id="buttonClear">Limpiar</button>
+      <input class="main__input--text" type="text" id="messageDecipher"" placeholder="Your deciphered message">
+    </div>
+
+  </div>
+  <div class="main__info">
+    <p class='info__main--text'>
+      El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+    </p>
+    <p class='info__main--text'>
+      Por ejemplo, si usamos un desplazamiento (offset) de 3 posiciones:
+      <ul class='main__info--list'>
+        <li>La letra A se cifra como D.</li>
+        <li>La palabra CASA se cifra como FDVD.</li>
+        <li>Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</li>
+        <li>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</li>
+      </ul>
+    </p>
+  </div>
+  </section>
+  <section>
+
+  </section>
+  <footer>
+    Caesar Cipher P. - Y.O
+  </footer>
+
+  <script src="index.js" type="module"></script>
+</body>
 </html>
