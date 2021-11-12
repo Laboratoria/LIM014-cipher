@@ -1,3 +1,62 @@
+                                  INVESTIGACIÓN UX - CRYPTO SISTEMAS.
+Uno de los principales retos a los nos enfrentamos los ciudadanos en este país es a la inseguridad ciudadana, y los delitos informáticos no son ajenos a esta realidad.
+En el Perú existe una gran cantidad de usuarios que utilizan tarjeta de crédito o tarjeta de débito y comparando con las cifras de delitos informáticos, llegamos a la conclusión que gran parte de estos usuarios no preveen la seguridad informática como una prioridad, ya sea por falta de información o porque las contraseñas de sus productos financieros son débiles y predecibles.
+
+Por estos antecedentes es que en CRYPTO SISTEMAS decidimos asumir este gran problema que cada vez más afecta a más peruanos y darles solución mediante la encriptación de contraseñas para cajeros automáticos, POS o transacciones financieras cibernéticas, y mediante la información y educación necesaria para evitar ser víctima de los delitos cibernéticos y financieros en general.
+
+**RESUMEN**
+***Principal objetivo de Crypto Sistemas:*** Reducir en un 12% los delitos informáticos y financieros en el Perú para el 2021.
+***Principal amenaza de Crypto Sistemas:*** Nuevas modalidades de delitos informáticos y financieros.
+***Estrategia de Crypto Sistemas:*** Cifrado y descifrado de contraseñas de modo seguro y anónimo, y educación informática y financiera.
+
+Para esta investigación, aplicamos la metodología ágil SCRUM y recopilamos la siguiente información:
+
+- ***Etapa 1 - Descubrimiento***
+  El 30% de peruanos tiene un producto financiero y realiza operaciones financieras online.
+  Además el 65% de estos usuarios tienen entre 22 y 45 años, y realizan operaciones financieras online al menos 2 veces al mes.
+  Ellos, consideran la seguridad financieras como prioriodad y siempre están informándose sobre como proteger sus cuentas bancarias. Aunque también existe el otro 35% de usuarios que tienen entre 22 y 65 años, que les interesa proteger su dinero en el banco pero desconocen sobre las nuevas modalidades de estafa por falta de información clara y concisa.
+
+   El 70% de ellos realizan sus operaciones financieras a través de desktops ya que les permite ver con mayor claridad las páginas y las urls que visitan para evitar ser estafados.
+- ***Etapa 2 - Definición***
+  De acuerdo a nuestra investigación previa, determinamos 2 arquetipos de usuarios:
+  * Carlos - tiene 27 años y es soltero, y tiene su emprendimiento de barbería. El realiza hasta 20 operaciones financieras al mes entre online y físicas, debido a su rubro económico. Él considera una prioridad la seguridad financiera, por eso tiene asegurada sus cuentas contra robos hasta cierto monto. Su problema es que debido al alto volumen de transacciones que realiza teme ser víctima de algún delito cibernético y financiero, y está considerando reducir la cantidad de operaciones promedio mensual.
+
+  * Milagros - tiene 34 años, es mamá de Santiago, 1 niño de 4 años y trabaja como profesora de 3ero de secundaria. Debido a las responsabilidades que tiene no dispone de tiempo suficiente para ir al banco por ende realiza todas sus operaciones financieras de manera digital. Ella es una persona precavida y evitar usar contraseñas predecibles y sabe muy bien que no debe entregar su información financiera a nadie. Sin embargo, hace 2 meses fue víctima del phishing ya que ingresó sus datos en una página clonada de su banca financiera.
+
+  * Octavio - tiene 64 años, es una persona jubilada quien decidió abrir una cuenta para colocar sus ahorros. Sin embargo, utilizó como contraseña su cumpleaños y fue motivo para que le vaciaran su cuenta bancaria ya que tenía una contraseña predecible. A él le preocupa mucho la seguridad financiera pero no está al tanto de las nuevas modalidades de estafa y además entregó su tarjeta a un falso trabajador de su banco.
+
+- ***Etapa 3 - Prototipado***
+  En esta etapa, hemos desarrollado por prototipos 1 producto digital que codifica y descodifica claves personales para banca y además que educa sobre las nuevas modalidades de delitos cibernéticos y sobre cómo prevenirlos.
+  Este producto digital tiene un modo seguro y anónimo para evitar que queden tus datos en el servidor. Además, se sostiene principalmente mediante donaciones.
+
+  Construímos y diseñamos 2 posibles prototipos mediante diagramas de flujo y los testeamos con 3 usuarios parte del público objetivo. De este testing escogimos el prototipo 2 (de baja fidelidad) que cumplía mejor con las expectativas del usuario.
+  EL prototipo fue trabajado especialmente para desktops pero también se adapta de móviles.
+
+  **sketch 1 (hacer click en el ícono)**
+  ![Prototipo1](https://github.com/meryvera/LIM014-cipher/blob/mery-cipher2.1/src/img/prototipo1.png "sketch 1")
+
+   **sketch 2 (hacer click en el ícono)**
+  ![Prototipo2](https://github.com/meryvera/LIM014-cipher/blob/mery-cipher2.1/src/img/prototipo2.png "sketch 2")
+
+  ***Feedback de usuario testeado 1:***
+
+  Carlos: Lo que mas llama mi atención es el logo en el prototipo 1, y lo segundo es ver al botòn "información" a la vista. Me parece ùtil encontrar informaciòn relevante a la mano para evitar ser víctimas de la delincuencia.
+
+  ***Feedback de usuario testeado 2:***
+
+  Milagros:
+  Crypto sistemas me llamó mucho la atenciòn que tuviera al robot de seguridad al inicio ya que asì puedo confiar màs en la pàgina. Ademàs, la informaciòn de primera mano que brinda para evitar los ataques cibernèticos me parece sùper necesario. Tambièn los nombres aleatorios que me brindan màs seguridad. Engeneral me gustò màs el prototipo 2.
+
+  ***Feedback de usuario testeado 3:***
+
+  Octavio:
+  El prototipo 2 me llamò màs la atenciòn ya que tiene el robot como parte de la pàgina. Ademàs ese robot me da mucha confianza de que de verdad obtendrè contraseñas seguras y anònimas.
+
+
+- ***Etapa 4 - Entrega***
+  Según los resultados del testing realizado escogimos el prototipo nro.2 que es nuestro producto mínimo viable - MVP que fue desarrollado y lanzado al mercado.
+
+
 # Cifrado César
 
 ## Índice
